@@ -1,0 +1,6 @@
+Allow from all
+RewriteEngine on
+RewriteBase /(一つ下の階層のdirectory名)/app/webroot
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]

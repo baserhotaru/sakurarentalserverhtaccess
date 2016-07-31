@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^$ (ひとつしたの階層のdirectory名)/app/webroot/ [L]
+RewriteRule (.*) tyb/app/webroot/$1 [L]

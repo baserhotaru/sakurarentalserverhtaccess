@@ -1,0 +1,7 @@
+ Order allow,deny
+Deny from all
+
+RewriteEngine on
+RewriteBase /(親のドメイン、サブドメイン名)/(ひとつ下の階層のdirectory名)/app
+RewriteRule ^$ webroot/ [L]
+RewriteRule (.*) webroot/$1 [L]
